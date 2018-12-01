@@ -7,7 +7,7 @@ MOVIE_TITLE = re.compile(r'\d+\.\s+(.*)\s\(.*').sub
 def get_movie():
     """Source 100 movies: 
     http://www.infoplease.com/ipea/A0760906.html"""
-    with open('movies.txt') as f:
+    with open('challenges/10/movies.txt') as f:
         rand_line = random.choice(f.readlines())
         return MOVIE_TITLE(r'\1', rand_line.rstrip())
 
