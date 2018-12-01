@@ -15,6 +15,12 @@ class Hangman(object):
 
 # or use functions ...
 
+def placeholder():
+
+	random_word = get_word()
+	len_rw = len(random_word)
+	print("Please ")
+
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
