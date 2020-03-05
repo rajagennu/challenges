@@ -1,7 +1,8 @@
 from data import DICTIONARY, LETTER_SCORES
 
 def load_words():
-    """Load dictionary into a list and return list"""
+    with open('./dictionary.txt') as file:
+    	return file.readlines() # readlines will return the content in the list
     pass
 
 def calc_word_value():
@@ -15,4 +16,5 @@ def max_word_value():
     pass
 
 if __name__ == "__main__":
-    pass # run unittests to validate
+    loadwords = load_words()
+    print(loadwords)
